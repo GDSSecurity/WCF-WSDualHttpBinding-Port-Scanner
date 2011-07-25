@@ -1,0 +1,10 @@
+WCF WSDualHttpBinding Port Scanner
+Created by Brian Holyfield (labs@gdssecurity.com)
+Copyright (c) 2009 Gotham Digital Science - All Rights Reserved
+
+This software is released under the Reciprocal Public License 1.5 (RPL1.5) http://www.opensource.org/licenses/rpl1.5
+
+Proof of Concept utility for abusing WCF Web Services that use the WSDualHttpBinding in order to perform remote port scans of arbitrary hosts.  The utility issues successive CreateSequence requests to the target WCF service that each have a different ReplyTo address and/or port, and measures the time between a CreateSequence request and the "202 Accepted" response to determine whether the previous request was successful. 
+
+For more information, consult http://www.gdssecurity.com/l/b/
+
